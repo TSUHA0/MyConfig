@@ -3,15 +3,17 @@
 
 export PATH=$PATH:/root/go/bin
 
+#set default EDITOR, when use ranger to open file you will use it.
+export EDITOR=/usr/bin/vim
+
 # Path to your oh-my-zsh installation.
 export ZSH="/root/.oh-my-zsh"
+
+#set Go proxy and go mod on.
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn,direct
 
-
 alias a='/root/algorithm/run.sh'
-alias vget="v2gen -u 'https://sub.juzicloud.vip/link/ZbBSWDQV2OPC4g7e?sub=3' -o /usr/local/etc/v2ray/config.json -best -thread 52
-systemctl restart v2ray.service"
 
 alias cfm='clang-format --dump-config -style="{IndentWidth: 4}" > .clang-format'
 alias rg='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
