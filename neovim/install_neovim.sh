@@ -9,5 +9,6 @@ sudo apt-get install neovim
 
 sudo pip3 install neovim
 sudo pip3 install pynvim
+npm install -g neovim
 
 echo " > neovim installed"

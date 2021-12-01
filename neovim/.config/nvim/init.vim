@@ -16,6 +16,29 @@ Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
+
+" If you are using WSL2 Ubuntu 20.04, Download: 
+"     https://github.com/equalsraf/win32yank/releases
+" Put the software version required to your Windows 10 (Windows 11 is not verified), 
+" path:    C:\Windows\System32
+" and chmod in wsl2:    chmod 777 /mnt/c/Windows/System32/win32yank.exe
+" then you can copy/paste using <leader>y/<leader>p to your windows clipboard.
+"
+set clipboard+=unnamedplus
+let g:clipboard = {
+          \   'name': 'win32yank-wsl',
+          \   'copy': {
+          \      '+': 'win32yank.exe -i --crlf',
+          \      '*': 'win32yank.exe -i --crlf',
+          \    },
+          \   'paste': {
+          \      '+': 'win32yank.exe -o --lf',
+          \      '*': 'win32yank.exe -o --lf',
+          \   },
+          \   'cache_enabled': 0,
+          \ }
+
+
 set ts=4
 set softtabstop=4
 set shiftwidth=4

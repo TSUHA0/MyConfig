@@ -18,7 +18,8 @@ alias a='/root/algorithm/run.sh'
 alias cfm='clang-format --dump-config -style="{IndentWidth: 4}" > .clang-format'
 alias rg='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 alias h='history'
-
+alias proxychains4='proxychains'
+alias pc='proxychains'
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -85,7 +86,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose zsh-proxychains-ng)
+plugins=(git yarn npm pip docker-compose zsh-proxychains-ng)
 
 source $ZSH/oh-my-zsh.sh
 
