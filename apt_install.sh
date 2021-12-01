@@ -4,8 +4,10 @@
 #utils
 echo "------- Installing utils package -------"
 apt install curl net-tools proxychains zsh vim \
-	make cmake \
-	ranger 
+	make cmake ranger ninja-build gettext \
+	libtool libtool-bin autoconf automake \
+	pkg-config unzip curl doxygen pip \
+	npm xclip
 
 # if you want preview file when your user is 'root'
 # you need to find 'ranger/core/main.py'
@@ -28,6 +30,13 @@ apt install curl net-tools proxychains zsh vim \
 #         #   fm.settings.use_preview_script = False
 #         #   LOG.info("Running as root, disabling the file previews.")
 # then you will preview file as root
+
+
+sudo npm config set registry https://registry.npm.taobao.org/
+sudo npm install -g yarn
+sudo yarn config set registry https://registry.npm.taobao.org/
+
+yarn config get registry && npm config get registry
 
 echo "------- Installed utils package -------"
 
