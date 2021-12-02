@@ -12,7 +12,8 @@ execute 'source' fnamemodify(expand('<sfile>'), ':h').'/main.vim'
 
 " Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive',
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
