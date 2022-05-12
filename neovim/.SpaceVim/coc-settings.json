@@ -1,28 +1,4 @@
 {
-	"languageserver": {
-		"ccls": {
-			"command": "ccls",
-			"filetypes": [
-				"c",
-				"cpp",
-				"cuda",
-				"objc",
-				"objcpp"
-			],
-			"rootPatterns": [
-				".ccls-root",
-				"compile_commands.json"
-			],
-			"initializationOptions": {
-				"cache": {
-					"directory": ".ccls-cache"
-				},
-				"client": {
-					"snippetSupport": true
-				}
-			}
-		}
-	},
 	"suggest.noselect": true,
 	"suggest.enablePreselect": false,
 	"suggest.completionItemKindLabels": {
@@ -143,5 +119,7 @@
 		"]c": "gitNext",
 		"<<": "gitStage",
 		">>": "gitUnstage"
-	}
+	},
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.0/clangd_14.0.0/bin/clangd"
 }

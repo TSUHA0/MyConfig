@@ -26,10 +26,10 @@
     disabled_plugins = ['nerdtree-git-plugin', 'nerdtree', 'neomake','dein.vim','deoplete.nvim']
 
 # Enable autocomplete layer
-#[[layers]]
-#name = 'autocomplete'
-#auto_completion_return_key_behavior = "complete"
-#auto_completion_tab_key_behavior = "smart"
+[[layers]]
+  name = 'autocomplete'
+  auto_completion_return_key_behavior = "complete"
+  auto_completion_tab_key_behavior = "smart"
 
 
 [[layers]]
